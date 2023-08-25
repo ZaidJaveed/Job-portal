@@ -15,8 +15,8 @@ function SignIn() {
         navigate("/");
       }
     } catch (err) {
-      if (err.response.data.status === "fail")
-        alert(`No such user! please register`);
+      alert(err.response.data.message);
+      console.log(err);
     }
   };
   function handleSubmit(e) {

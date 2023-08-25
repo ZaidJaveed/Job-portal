@@ -33,7 +33,7 @@ const login = catchAsync(async (req, res, next) => {
   //   2 verify email and password
   const user = await User.findOne({ email }).select("+password");
   if (!user || !(await user.verifyPassword(password, user.password)))
-    return next(new AppError("incorrect email or password", 401));
+    return next(new AppError("incorrect email or password", 400));
   //   3 send token to client
   const token = signToken(user._id, user.role);
   res.status(200).json({
