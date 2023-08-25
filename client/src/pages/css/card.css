@@ -1,0 +1,91 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 20px auto;
+  justify-content: center;
+}
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  background-color: var(--color-primary-orange);
+  box-shadow: var(--box-shadow);
+  color: var(--text-color-white);
+}
+.card-category-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.card hr {
+  border: 1px solid var(--color-primary-blue);
+  margin: 20px;
+}
+.card-category {
+  background-color: var(--color-primary-blue);
+  color: var(--text-color-white);
+  padding: 5px;
+  border-radius: 10px;
+}
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-wrapper .btn {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary-blue);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color-white);
+  margin-top: 20px;
+}
+.btn-wrapper .btn:hover {
+  background-color: var(--btn-hover-bgcolor);
+  color: var(--text-color-white);
+}
+@media only all and (max-width: 750px) {
+  .card {
+    width: 100%;
+  }
+}
+/* filter and add btn */
+.filter-add-wrapper {
+  display: flex;
+}
+.add-job-form input,
+select,
+textarea {
+  margin-bottom: 10px;
+  outline: none;
+  padding: 3px;
+  border: 1px solid black;
+}
+.btn-add-job {
+  margin-right: 10px;
+  position: absolute;
+  right: 5px;
+  top: 60px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: var(--box-shadow);
+  color: white;
+  margin-top: 20px;
+}

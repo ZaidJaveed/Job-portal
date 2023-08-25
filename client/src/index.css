@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary-orange: #4e6692;
+  --color-primary-blue: #9ba4b4;
+  --text-color-black: black;
+  --text-color-white: white;
+  --text-color-grey: rgba(3, 2, 2, 0.4);
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --placeholder-color: rgba(3, 2, 2, 0.4);
+  --btn-hover-bgcolor: rgb(58, 59, 59);
+}

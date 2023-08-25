@@ -1,0 +1,25 @@
+nav {
+  background-color: var(--color-primary-orange);
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+nav ul li a.active {
+  border-bottom: 2px solid white;
+}
+.logout-btn {
+  background-color: #4e6692;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
